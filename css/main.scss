@@ -1,0 +1,124 @@
+body {
+  background-color: rgb(85, 164, 255);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  img {
+    height: 100%;
+    width: 80%;
+  }
+}
+
+.login {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+input[type=text] {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-left: 1px solid rgb(206, 212, 218);
+  width: 100%;
+  padding-left: 1em;
+  opacity: 0.7;
+}
+
+input[type=submit] {
+  border: none;
+  border-radius: 3.5px;
+  background-color: rgb(65, 130, 201);
+  color: rgb(241, 237, 239);
+  width: 93%;
+  padding: 0.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .login-det {
+    margin: 0.5em;
+  }
+}
+
+.my-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contents {
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    padding-bottom: 4em;
+    width: 20%;
+    border-radius: 3.5px;
+    box-shadow: 0 4px 16px 0 rgba(9, 9, 9, 0.2), 0 6px 20px 0 rgba(9, 9, 9, 0.2);
+  }
+}
+
+.login-det {
+  border: 1px solid rgb(206, 212, 218); 
+  padding: 0; 
+  margin: 0;
+  display:inline-flex;
+  border-radius: 3.5px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) { 
+  input[type=submit] {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1800px) { 
+  input[type=submit] {
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width: 680px) { 
+  .logo {
+    text-align: center;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .my-container {
+    .contents {
+      padding: 2em;
+      padding-bottom: 4em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      width: 30%;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) { 
+  .my-container {
+    .contents {
+      padding: 2em;
+      padding-bottom: 4em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      width: 50%;
+      border-radius: 3px;
+    }
+  }
+}
+
